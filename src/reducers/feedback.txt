@@ -1,0 +1,19 @@
+react-stripe-checkout
+Load stripe's checkout.js as a react component. Easiest way to use checkout with React
+https://github.com/azmenak/react-stripe-checkout
+
+client>npm install --save react-stripe-checkout
+
+publishable key is available in client side and server side
+inside dev.js add key and secret
+in prod.js update
+https://shielded-headland-32053.herokuapp.com/ in heroku also
+
+create react app environment variable
+https://github.com/azmenak/react-stripe-checkout
+.env.production
+.env.development
+
+in index.js - 
+
+components-> payments.js
