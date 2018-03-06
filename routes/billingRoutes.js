@@ -17,9 +17,15 @@ module.exports = app => {
             source:req.body.id
         });
         console.log('charge is',charge);
-        req.user.credits=+5;
+        console.log('req.user', req.user);
+        // user is { credits: 10,
+        //        _id: 5a86dff08cd3870694f3012f,
+        //        googleId: '109773327493628252850',
+        //        __v: 0 }
+        req.user.credits+=5;
         const user = await req.user.save();
         res.send(user);
+        console.log('user is', user);
 
     })
 }
